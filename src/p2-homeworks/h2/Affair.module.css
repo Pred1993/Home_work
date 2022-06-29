@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 25px;
+}
+
+.item1 {
+width: 100px;
+
+}
+
+.item2 {
+    width: 100px;
+
+
+}
+
+.item3 {
+    width: 20px;
+
+}
+
+.delete {
+    width: 24px;
+}
