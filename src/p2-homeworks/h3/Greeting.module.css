@@ -1,12 +1,17 @@
-.someClass {
+/*.someClass {*/
+/*}*/
 
-}
+/*.error {*/
+/*    border: 1px solid red;*/
+/*    outline: none;*/
+/*}*/
 
-.error {
-    border: 1px solid red;
-    outline: none;
-}
+/*.errorMessage {*/
+/*    color: red;*/
+/*}*/
 
-.errorMessage {
-    color: red;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
