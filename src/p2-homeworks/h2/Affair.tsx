@@ -10,16 +10,19 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {props.deleteAffairCallback(props.affair._id)}// need to fix
+    const deleteCallback = () => {
+        props.deleteAffairCallback(props.affair._id)
+    }// need to fix
 
     return (
         <div>
             <li className={s.container}>
                 <span className={s.item1}>{props.affair.name} </span>
                 <span className={s.item2}>{props.affair.priority} </span>
-                <span className={s.item3}><SuperButton className={s.delete}
-                                red
-                                onClick={deleteCallback}>X
+                <span className={s.item3}>
+                    <SuperButton className={s.delete}
+                                 red
+                                 onClick={deleteCallback}>X
                 </SuperButton>
                 </span>
             </li>

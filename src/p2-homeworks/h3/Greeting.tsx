@@ -21,8 +21,8 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div className={s.container}>
             <SuperInputText value={name} onChange={setNameCallback} className={inputClass}
-             onKeyPress={onKeyPressHandler}
-             error={error}
+                            onKeyPress={onKeyPressHandler}
+                            error={error}
             />
             <SuperButton
                 onClick={addUser}>add

@@ -1,15 +1,3 @@
-/*.someClass {*/
-/*}*/
-
-/*.error {*/
-/*    border: 1px solid red;*/
-/*    outline: none;*/
-/*}*/
-
-/*.errorMessage {*/
-/*    color: red;*/
-/*}*/
-
 .container {
     display: flex;
     flex-direction: column;

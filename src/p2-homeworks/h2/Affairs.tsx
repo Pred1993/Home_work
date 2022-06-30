@@ -38,11 +38,12 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <div className={s.container} >
+            <div className={s.container}>
                 <SuperButton className={props.filter === 'all' ? s.button : ''} onClick={setAll}> All </SuperButton>
-                <SuperButton className={props.filter === 'high' ? s.button : ''}onClick={setHigh}> High </SuperButton>
-                <SuperButton className={props.filter === 'middle' ? s.button : ''}onClick={setMiddle}> Middle </SuperButton>
-                <SuperButton className={props.filter === 'low' ? s.button : ''}onClick={setLow}> Low </SuperButton></div>
+                <SuperButton className={props.filter === 'high' ? s.button : ''} onClick={setHigh}> High </SuperButton>
+                <SuperButton className={props.filter === 'middle' ? s.button : ''} onClick={setMiddle}> Middle </SuperButton>
+                <SuperButton className={props.filter === 'low' ? s.button : ''} onClick={setLow}> Low </SuperButton>
+            </div>
         </div>
     )
 }
