@@ -6,15 +6,17 @@
 }
 
 .item1 {
-    width: 100px;
+    width: 90px;
+    text-align: center;
 }
 
 .item2 {
     width: 100px;
+    text-align: center;
 }
 
 .item3 {
-    width: 20px;
+    width: 30px;
 }
 
 .delete {

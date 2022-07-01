@@ -1,0 +1,49 @@
+.active {
+    color: #1f1d1e;
+    cursor: default;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 220px;
+    font-size: 15px;
+    background-color: #676464;
+    box-shadow: inset 0px 20px 20px #ffffff;
+    border: 1px solid #cecece;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    opacity: 30%;
+    font-weight: bold;
+}
+
+.container:hover {
+    box-shadow: inset 0px -20px 20px #ffffff;
+    opacity: 100%;
+}
+
+.item1 {
+    text-decoration: none;
+}
+
+.item1:hover {
+    color: green;
+}
+
+.item2 {
+    text-decoration: none;
+}
+
+.item2:hover {
+    color: green;
+}
+
+.item3 {
+    text-decoration: none;
+}
+
+.item3:hover {
+    color: green;
+}
+
