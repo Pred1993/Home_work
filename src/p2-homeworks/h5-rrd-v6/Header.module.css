@@ -1,6 +1,7 @@
 .active {
-    color: #1f1d1e;
+    color: #62120e;
     cursor: default;
+    text-decoration: none;
 }
 
 .container {
@@ -16,6 +17,7 @@
     cursor: pointer;
     opacity: 30%;
     font-weight: bold;
+
 }
 
 .container:hover {
@@ -23,27 +25,15 @@
     opacity: 100%;
 }
 
-.item1 {
+.item {
     text-decoration: none;
+    color: #1c600c;
 }
 
-.item1:hover {
-    color: green;
+.item:hover {
+    color: white;
 }
 
-.item2 {
-    text-decoration: none;
-}
 
-.item2:hover {
-    color: green;
-}
 
-.item3 {
-    text-decoration: none;
-}
-
-.item3:hover {
-    color: green;
-}
 
