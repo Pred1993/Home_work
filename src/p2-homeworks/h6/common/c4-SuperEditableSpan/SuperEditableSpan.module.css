@@ -1,0 +1,10 @@
+.span {
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    height: 10px;
+    opacity: 30%;
+}
+.span:hover {
+    opacity: 100%;
+}
