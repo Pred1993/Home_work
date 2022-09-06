@@ -1,39 +1,34 @@
 .active {
-    color: #62120e;
-    cursor: default;
-    text-decoration: none;
+  color: #62120e;
+  cursor: default;
+  text-decoration: none;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 220px;
-    font-size: 15px;
-    background-color: #676464;
-    box-shadow: inset 0px 20px 20px #ffffff;
-    border: 1px solid #cecece;
-    border-radius: 0px 8px 8px 0px;
-    cursor: pointer;
-    opacity: 30%;
-    font-weight: bold;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 220px;
+  font-size: 15px;
+  background-color: #676464;
+  box-shadow: inset 0px 20px 20px #ffffff;
+  border: 1px solid #cecece;
+  border-radius: 0px 8px 8px 0px;
+  cursor: pointer;
+  opacity: 30%;
+  font-weight: bold;
 }
 
 .container:hover {
-    box-shadow: inset 0px -20px 20px #ffffff;
-    opacity: 100%;
+  box-shadow: inset 0px -20px 20px #ffffff;
+  opacity: 100%;
 }
 
 .item {
-    text-decoration: none;
-    color: #1c600c;
+  text-decoration: none;
+  color: #1c600c;
 }
 
 .item:hover {
-    color: white;
+  color: white;
 }
-
-
-
-

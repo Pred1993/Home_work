@@ -1,24 +1,24 @@
 .select {
-    height: 25px;
-    width: 60px;
-    appearance: none;
-    background: url("37413.w4Px0.png") no-repeat right center #676464;;
-    cursor: pointer;
-    border: 1px solid #cecece;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 13px;
-    outline: none;
-    box-shadow: inset 0px 20px 20px #ffffff;
+  height: 25px;
+  width: 60px;
+  appearance: none;
+  background: url('37413.w4Px0.png') no-repeat right center #676464;
+  cursor: pointer;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 13px;
+  outline: none;
+  box-shadow: inset 0px 20px 20px #ffffff;
 }
 
 .select:hover {
-    box-shadow: inset 0px -20px 20px #ffffff;
-    transform: scale(1.1);
+  box-shadow: inset 0px -20px 20px #ffffff;
+  transform: scale(1.1);
 }
 .option {
-    background-color: #b7b5b5;
+  background-color: #b7b5b5;
 }
 .option:checked {
-    background-color: #706f6f;;
+  background-color: #706f6f;
 }

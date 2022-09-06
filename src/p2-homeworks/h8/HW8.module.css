@@ -1,19 +1,19 @@
 .column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .button {
-    width: 100px;
+  width: 100px;
 }
 .people {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
 }
