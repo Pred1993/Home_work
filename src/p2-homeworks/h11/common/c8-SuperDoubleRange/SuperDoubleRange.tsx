@@ -1,19 +1,33 @@
 import React from 'react';
+import {Box, Slider} from "@mui/material";
 
 type SuperDoubleRangePropsType = {
-  onChangeRange?: (value: [number, number]) => void;
-  value?: [number, number];
-  // min, max, step, disable, ...
+    onChangeDoubleRange: (newValue: number[]) => void;
+    value: Array<number>
+    min: number
+    max: number
+    step: number
+    // min, max, step, disable, ...
 };
 
-const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = ({
-  onChangeRange,
-  value,
-  // min, max, step, disable, ...
+const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = ({onChangeDoubleRange, value, min, max// min, max, step, disable, ...
 }) => {
-  // сделать самому, можно подключать библиотеки
-
-  return <>DoubleRange</>;
+    // сделать самому, можно подключать библиотеки
+    const handleChange = (event: Event, newValue: number | number[]) => {
+        onChangeDoubleRange(newValue as number[]);
+    };
+    return <>
+        <Box sx={{ width: 300 }}>
+            <Slider
+                min={min}
+                max={max}
+                getAriaLabel={() => 'Temperature range'}
+                value={value}
+                onChange={handleChange}
+                valueLabelDisplay="auto"
+            />
+        </Box>
+    </>;
 };
 
 export default SuperDoubleRange;
