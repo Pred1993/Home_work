@@ -9,7 +9,7 @@
   position: relative;
   left: 3px;
   height: 5px;
-  background: #FFA500FF;
+  background: #ffa500ff;
   -webkit-appearance: none;
   outline: none;
   border-radius: 4px;
@@ -21,8 +21,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #FFA500FF;
+  background: #ffa500ff;
   box-shadow: 0 0 2px #222;
   cursor: pointer;
 }
-

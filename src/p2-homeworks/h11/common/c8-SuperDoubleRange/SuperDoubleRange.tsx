@@ -1,6 +1,5 @@
 import React from 'react';
-import {Box, Slider} from '@mui/material';
-
+import { Box, Slider } from '@mui/material';
 
 type SuperDoubleRangePropsType = {
   onChangeDoubleRange: (newValue: number[]) => void;
@@ -18,7 +17,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = ({
 }) => {
   // сделать самому, можно подключать библиотеки
   const handleChange = (event: Event, newValue: number | number[]) => {
-    debugger
+    debugger;
     onChangeDoubleRange(newValue as number[]);
   };
   return (
