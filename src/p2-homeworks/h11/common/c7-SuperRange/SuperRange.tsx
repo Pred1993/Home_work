@@ -8,7 +8,7 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 // (чтоб не писать value: string, onChange: ...; они уже все описаны в DefaultInputPropsType)
 type SuperRangePropsType = DefaultInputPropsType & {
   // и + ещё пропсы которых нет в стандартном инпуте
-  onChangeRange?: (value: number) => void;
+  onChangeRange?: (value: number[]) => void;
 };
 
 const SuperRange: React.FC<SuperRangePropsType> = ({
@@ -21,13 +21,13 @@ const SuperRange: React.FC<SuperRangePropsType> = ({
   const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
     onChange && onChange(e); // сохраняем старую функциональность
 
-    onChangeRange && onChangeRange(+e.currentTarget.value);
+    onChangeRange && onChangeRange([+e.currentTarget.value, 200]);
   };
 
   const finalRangeClassName = `${s.range} ${className ? className : ''}`;
 
   return (
-    <>
+    <div className={s.slider}>
       <input
         type={'range'}
         onChange={onChangeCallback}
@@ -35,7 +35,7 @@ const SuperRange: React.FC<SuperRangePropsType> = ({
         {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
       />
       {/*<Slider defaultValue={50} aria-label="Default" valueLabelDisplay="auto" />*/}
-    </>
+    </div>
   );
 };
 

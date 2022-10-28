@@ -4,3 +4,25 @@
   justify-content: center;
   align-items: center;
 }
+.range {
+  width: 302px;
+  position: relative;
+  left: 3px;
+  height: 5px;
+  background: #FFA500FF;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFA500FF;
+  box-shadow: 0 0 2px #222;
+  cursor: pointer;
+}
+

@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange';
 import SuperRange from './common/c7-SuperRange/SuperRange';
 import s from './HW11.module.css';
+
+
 function HW11() {
-  const [value, setValue] = useState([0, 100]);
+  const [value, setValue] = useState([0, 200]);
   const min = 0;
   const max = 200;
-  // const step = Math.round((max - min) / 100)
-  const onChangeRange = (num: number) => setValue(value.map((v, i) => (i === 0 ? num : v)));
+    const onChangeRange = (num: number[]) => setValue(num)
   return (
     <div>
       <hr />
@@ -15,7 +16,6 @@ function HW11() {
       {/*should work (должно работать)*/}
       <div className={s.column}>
         <div>
-          <span>{value[0]}</span>
           <SuperRange value={value[0]} onChangeRange={onChangeRange} min={min} max={max} className={s.range} />
         </div>
         <div>
